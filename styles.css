@@ -15,9 +15,9 @@
                 text-align: center;
             }
             header .uitleg {
-                color: rgb(179, 255, 0);
+                color: rgb(116, 255, 10);
                 position: relative;
-                top: -90px;
+                top: -70px;
                 font-size: 40px;
             }
             header .logo a {
@@ -34,7 +34,7 @@
 
 
             section.a {
-                background-color: rgb(222, 130, 130);
+                background-color: rgb(90, 71, 1);
                 color: rgb(155, 166, 210);
                 text-align: center;
                 margin: 20px 10px 15px 10px;
