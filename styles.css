@@ -1,12 +1,12 @@
             body {
-                background-color: rgb(12, 12, 90);
+                background-color: rgb(26, 2, 2);
                 color: rgb(255, 255, 255);
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 0;
                 padding: 0;
             }
             header {
-                background-color: rgb(100, 4, 14);
+                background-color: rgb(118, 8, 19);
                 background-position: center;
                 background-size: 100%;
                 height: 60px;
@@ -34,25 +34,26 @@
 
 
             section.a {
-                background-color: rgb(90, 71, 1);
-                color: rgb(155, 166, 210);
+                background-color: rgba(0, 0, 0, 0.417);
+                color: rgb(21, 0, 255);
                 text-align: center;
-                margin: 20px 10px 15px 10px;
-                padding: 20px;
+                margin: 70px 0px 15px 160px;
+                padding: 0px 0 0px 0;
                 display: flex;
                 flex-direction: row;
-                border-radius: 20px;
+                border-radius: 60px;
+                width: 1200px;
             }
-            section.a2 {
-                background-color: rgb(18, 159, 138);
-                color: rgb(9, 34, 135);
-                text-align: center;
-                margin: 10px;
-                padding: 40px;
-                display: flex;
-                flex-direction: row;
-                border-radius: 20px;
+            section.a1 hr {
+                border: 0;
+                height: 2px;
+                background-color: rgba(0, 4, 255, 0.947);
+                width: 1000px;
+                margin-left: 280px;
+                box-shadow: 0px 10px 0px rgb(91, 6, 84), 0 20px 0 blue;
+                border-radius: 1000000000px;
             }
+
              section.tussenstop {
                 background-color: white;
                 color: black;
@@ -61,15 +62,17 @@
                 display: flex;
                 flex-direction: row;
             }
-            section.b {
-                background-color: rgba(221, 180, 18, 0.866);
+            section.b1{
                 color: rgb(9, 34, 135);
-                text-align: center;
-                margin: 10px;
-                padding: 20px;
+                margin: 40px 0 0 0;
+                padding: 100px 0 0px 0;
                 display: flex;
-                flex-direction: row;
-                border-radius: 20px;
+            }
+            section.b2{
+                color: rgb(9, 34, 135);
+                margin: 0px 0 0 0;
+                padding: 0px 0 1000px 0;
+                display: flex;
             }
             section.locaties_titel1 {
                 padding: 0px 10px;
@@ -128,6 +131,13 @@
                 top: 140px;
                 padding: 50px 50px 0 300px;
             }
+            section.picchufotos {
+                font-size: 250px;
+                font-weight: bolder;
+                text-transform: uppercase;
+                color: transparent;
+            }
+
             .loca2 figure {
                 margin: auto;
                 width: 200px;
@@ -174,26 +184,57 @@
             }
 
 
-            div.a {
-                background: rgb(223, 74, 74);
-                border-radius: 200px;
-                margin: auto;
-                width: 200px;
-                height: auto;
+            div.a1 {
+                background: rgba(203, 208, 197, 0);
+                border-radius: 20px;
+                margin:  auto;
+                text-transform: uppercase;
+                font-size: 230px;
+                opacity: calc(50%);
+                text-shadow: 3px 3px rgb(140, 0, 0), 6px 6px rgb(12, 6, 213);
+                transition: font-size 500ms;
+                font-family: 'Courier New', Courier, monospace;
             }
-            div.a2 {
-                background: rgb(48, 131, 9);
-                border-radius: 200px;
-                margin: auto;
-                width: 200px;
-                height: auto;
+            div.a1:hover {
+                font-size: 250px;
+                font-weight: bold;
+                font-style: italic;
+                opacity: calc(100%);
             }
+
             div.b1 {
-                background: rgb(218, 154, 50);
-                border-radius: 200px;
                 margin: auto;
-                width: 200px;
-                height: auto;
+                text-decoration: none;
+                background-image:
+                    linear-gradient(90deg, red, blue);
+                background-size: 0% 3px;
+                background-repeat: no-repeat;
+                background-position: left 1.95em;
+                padding-block: .35em;
+                transition: background-size 500ms;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 2;
+            }
+            div.b2 {
+                margin: auto;
+                text-decoration: none;
+                background-image:
+                    linear-gradient(90deg, red, blue);
+                background-size: 0% 3px;
+                background-repeat: no-repeat;
+                background-position: left 1.95em;
+                padding-block: .35em;
+                transition: background-size 500ms;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 2;
+            }
+            .b1:hover,
+            .b1 {
+                background-size: 100% 3px;
+            }
+            .b2:hover,
+            b2 {
+                background-size: 100% 3px;
             }
             div.tussenstop {
                 background: none;
@@ -211,6 +252,31 @@
                 margin: 10px;
                 padding: 10px;
             }
+            div.tekst_picchu {
+                background-image: url(images/Picchufoto.JPEG);
+                background-size: cover;
+                background-clip: text;
+            }
+
+            div.wachtwoord {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: pink;
+            }
+
+            .picchufotos .picchuknop {
+                background-color: red;
+                margin: 50px 0 0 600px;
+                font-size: 3.5rem;
+                box-shadow: 6px 6px blue;
+                border-radius: 10px;
+            }
+            .picchufotos .picchuknop:hover {
+                font-size: 4rem;
+                background-color: #ffd633;
+            }
 
             ul{
                 margin: 0;
@@ -218,21 +284,26 @@
                 list-style-type: none;
                 color: white;
             }
+            ul .logo {
+                margin-top: 2px;
+            }
 
 
             li {
                 display: inline-block;
                 margin-right: 20px;
+                margin-top: 5px;
                 color: white;
             }
             li:first-child {
                 font-size: larger;
             }
-
+            
 
             a {
                 color: white;
                 text-decoration: none;
+                transition: font-weight 400ms;
             }
             a:active {
                 font-weight: bolder;

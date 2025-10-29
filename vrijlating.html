@@ -18,20 +18,20 @@
                 </ul>
             </nav>
         </header>
-        <section class="picchufotos">
-            <div class="tekst_picchu">
-                PICCHU IS GEVANGEN!
-                ||||||||||||||||||||||
-                ||||||||||||||||||||||
-                ||||||||||||||||||||||
-                ||||||||||||||||||||||
-                ||||||||||||||||||||||
-                ||||||||||||||||||||||
-            </div>
-            <div>
-                <a href="vrijlating.html" class="picchuknop">Laat Picchu VRIJ</a>
-            </div>
-        </section>
+        <div class="wachtwoord">
+            <input type="text" id = "wachtwoordInput" placeholder="Geef het wachtwoord hier." required>
+        <button type="submit" class="btn" id="enterKnop">Enter</button>
+        </div>
+        <script>
+            document.getElementById("enterKnop").addEventListener("click", function() {
+                const invoer = document.getElementById("wachtwoordInput").value;
 
+                if (invoer === "12345") {
+                    window.location.href = "vrijgelaten.html";
+                } else {
+                    alert("Fout wachtwoord! Probeer opnieuw.");
+                }
+            });
+        </script>
     </body>
 </html> 
